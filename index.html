@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevCursos</title>
+    <link href="/src/output.css" rel="stylesheet" />
+  </head>
+  <body
+    class="min-h-screen bg-[radial-gradient(circle_at_center,_var(--color-hbo-purple)_0%,_var(--color-hbo-dark)_100%)]"
+  >
+    <div>
+      <nav
+        class="fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center bg-black/60 backdrop-blur-md border-b border-gray-800/50"
+      >
+        <img
+          src="/src/assets/logo.png"
+          alt="Logo DevCursos"
+          class="h-10 md:h-12"
+        />
+
+        <div class="hidden md:flex gap-8 items-center">
+          <a
+            href="index.html"
+            class="text-white font-semibold hover:text-indigo-400 transition-colors"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-gray-300 font-semibold hover:text-indigo-400 transition-colors"
+            >Cursos</a
+          >
+          <a
+            href="#"
+            class="text-gray-300 font-semibold hover:text-indigo-400 transition-colors"
+            >Minha Lista</a
+          >
+        </div>
+
+        <div class="md:hidden flex items-center">
+          <button
+            id="menuMobileBtn"
+            class="text-white focus:outline-none hover:text-indigo-400"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <div class="h-screen bg-hero bg-cover bg-center bg-no-repeat">
+        <div
+          class="container mx-auto h-full flex flex-col justify-center items-start"
+        >
+          <div class="max-w-lg text-white">
+            <h1 class="text-4xl font-bold mb-4">Gestão de Treino</h1>
+            <p class="text-lg mb-6">
+              Aprenda a organizar e otimizar seus treinos para alcançar seus
+              objetivos de forma eficiente.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-4 mt-6">
+            <a
+              href="/pages/player.html?id=btcgestaotreino&video=1_1"
+              class="flex items-center gap-2 px-8 py-3 bg-white text-black font-bold rounded-md hover:bg-gray-200 hover:scale-105 transition-all duration-300"
+            >
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+              Assistir Agora
+            </a>
+
+            <a
+              href="/pages/curso.html?id=btcgestaotreino"
+              class="flex items-center gap-2 px-8 py-3 bg-gray-500/40 backdrop-blur-md text-white font-bold rounded-md hover:bg-gray-500/60 transition-colors border border-gray-400/30"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+              Mais Informações
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="carrosselBox bootcamps"></div>
+      </div>
+
+      <script type="module" src="script.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme{
+  --background-image-hero: url('./assets/bg-gestao-treinos.jpg');
+  --color-hbo-dark: #02040e;
+  --color-hbo-purple: #0f1035;
+}
+
+.carrosselBox{
+  height: 40rem;
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 1rem;
+  -webkit-scrollbar { display: none; };
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carrosselBox::-webkit-scrollbar { 
+  display: none; 
+}
+
