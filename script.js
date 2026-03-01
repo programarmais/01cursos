@@ -1,4 +1,4 @@
-import { conteudo } from "./data.js";
+import { conteudo } from "../data.js";
 
 const sliders = document.querySelector(".carrosselBox");
 let scrollPerClick = 100;
@@ -7,7 +7,7 @@ async function scrollSlider() {
   conteudo.forEach((curso) => {
     sliders.insertAdjacentHTML(
       "beforeend",
-      `<a href="./pages/curso.html?id=${curso.id}"><img class="img-${curso.id} slider-img shrink-0 w-[85vw] md:w-80 h-full object-cover rounded-xl shadow-lg" src="${curso.img}"></a>`,
+      `<a href="./pages/curso.html?id=${curso.id}"><img class="img-${curso.id} slider-img shrink-0 w-64 md:w-72 object-cover object-top rounded-xl shadow-lg" src="${curso.img}"></a>`,
     );
   });
 }

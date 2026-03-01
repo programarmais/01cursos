@@ -7,21 +7,152 @@
     <link rel="stylesheet" href="https://cdn.plyr.io/3.8.4/plyr.css" />
     <title>DevCursos</title>
   </head>
-  <body class="min-h-screen bg-[radial-gradient(circle_at_center,_var(--color-hbo-purple)_0%,_var(--color-hbo-dark)_100%)]">
-    <nav>
-      <a href="../index.html" class="text-white hover:text-indigo-400">home</a>
+  <body
+    class="min-h-screen bg-[radial-gradient(circle_at_center,_var(--color-hbo-purple)_0%,_var(--color-hbo-dark)_100%)]"
+  >
+    <nav
+      class="top-0 w-full z-50 px-6 py-4 flex justify-between items-center bg-black/60 backdrop-blur-md border-b border-gray-800/50"
+    >
+      <img
+        src="../src/assets/logo.png"
+        alt="Logo 01Cursos"
+        class="h-10 md:h-12"
+      />
+
+      <div class="hidden md:flex gap-8 items-center">
+        <a
+          href="../index.html"
+          class="text-white font-semibold hover:text-indigo-400 transition-colors"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="text-gray-300 font-semibold hover:text-indigo-400 transition-colors"
+          >Cursos</a
+        >
+        <a
+          href="#"
+          class="text-gray-300 font-semibold hover:text-indigo-400 transition-colors"
+          >Minha Lista</a
+        >
+      </div>
+
+      <div class="md:hidden flex items-center">
+        <button
+          id="menuMobileBtn"
+          class="text-white focus:outline-none hover:text-indigo-400"
+        >
+          <svg
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
     </nav>
 
-
-    <div class="wrapper">
-      <video id="player" playsinline controls></video>
+    <div class="w-full bg-black">
+      <div class="wrapper max-w-5xl mx-auto">
+        <video id="player" class="aspect-video" playsinline controls></video>
+      </div>
     </div>
 
-    <h1 id="title"></h1>
+    <div
+      class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 py-8 px-4"
+    >
+      <div class="md:col-span-2">
+        <h1 id="title" class="text-white text-2xl font-bold mb-4"></h1>
+        <p id="description"></p>
+      </div>
 
-    
+      <div class="flex flex-col gap-8">
+        <div id="containerProximo" class="hidden">
+          <h3
+            class="text-white font-bold text-sm uppercase tracking-wider mb-4"
+          >
+            Próximo Episódio
+          </h3>
+          <a id="linkProximo" href="#" class="flex gap-4 group">
+            <div
+              class="relative w-36 aspect-video bg-gray-800 rounded-md overflow-hidden shrink-0 shadow-lg"
+            >
+              <img
+                id="imgProximo"
+                src=""
+                class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
+              />
+              <div class="absolute inset-0 flex items-center justify-center">
+                <svg
+                  class="w-8 h-8 text-white drop-shadow-md"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center">
+              <span
+                id="tituloProximo"
+                class="text-white font-semibold text-sm line-clamp-2"
+                >Carregando...</span
+              >
+            </div>
+          </a>
+        </div>
+
+        <div id="containerAnterior" class="hidden">
+          <h3
+            class="text-white font-bold text-sm uppercase tracking-wider mb-4"
+          >
+            Episódio Anterior
+          </h3>
+          <a id="linkAnterior" href="#" class="flex gap-4 group">
+            <div
+              class="relative w-36 aspect-video bg-gray-800 rounded-md overflow-hidden shrink-0 shadow-lg"
+            >
+              <img
+                id="imgAnterior"
+                src=""
+                class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-all duration-300"
+              />
+              <div class="absolute inset-0 flex items-center justify-center">
+                <svg
+                  class="w-8 h-8 text-white drop-shadow-md"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center">
+              <span
+                id="tituloAnterior"
+                class="text-gray-400 font-semibold text-sm line-clamp-2 group-hover:text-white transition-colors"
+                >Carregando...</span
+              >
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
     <script src="https://cdn.plyr.io/3.8.4/plyr.js"></script>
     <script type="module" src="../scripts/player.js"></script>
-    
   </body>
 </html>
