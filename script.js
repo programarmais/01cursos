@@ -1,4 +1,4 @@
-import { conteudo } from "./data.js";
+import { conteudo } from "../data.js";
 
 const sliders = document.querySelector(".carrosselBox");
 let scrollPerClick = 100;
