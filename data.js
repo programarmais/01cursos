@@ -82,10 +82,7 @@ export const conteudo = [
         title: "Tela do Produto",
         description: `
           <p class="text-gray-300 mb-4">informações necessárias:</p>
-            
           <ul class="space-y-3">
-
-            
             <li>
               <a href="https://github.com/fullstackclubeducacao/fullstackweek-donalds/tree/aula-04" target="_blank" class="text-indigo-400 hover:text-indigo-300 transition-colors flex items-center gap-2">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
@@ -103,10 +100,7 @@ export const conteudo = [
         title: "Carrinho de Compras & Deploy",
         description: `
           <p class="text-gray-300 mb-4">informações necessárias:</p>
-            
           <ul class="space-y-3">
-
-            
             <li>
               <a href="https://github.com/fullstackclubeducacao/fullstackweek-donalds/tree/aula-05" target="_blank" class="text-indigo-400 hover:text-indigo-300 transition-colors flex items-center gap-2">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
@@ -123,11 +117,8 @@ export const conteudo = [
         id: "1_5",
         title: "Integração com Gateway de Pagamento",
         description: `
-          <p class="text-gray-300 mb-4">informações necessárias:</p>
-            
+          <p class="text-gray-300 mb-4">informações necessárias:</p>         
           <ul class="space-y-3">
-
-            
             <li>
               <a href="https://github.com/fullstackclubeducacao/fullstackweek-donalds/tree/aula-06" target="_blank" class="text-indigo-400 hover:text-indigo-300 transition-colors flex items-center gap-2">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
@@ -142,6 +133,7 @@ export const conteudo = [
     ],
   },
 
+  /*BootCamp Aulões*/
   {
     id: "aulao",
     title: "Aulões",
