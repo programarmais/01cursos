@@ -16,11 +16,3 @@ scrollSlider();
 
 const btnesquerdo = document.querySelector(".switchLeft");
 const btndireito = document.querySelector(".switchRight");
-
-btnesquerdo.addEventListener("click", () => {
-  sliders.scrollLeft += scrollPerClick;
-});
-
-btndireito.addEventListener("click", () => {
-  sliders.scrollLeft -= scrollPerClick;
-});
