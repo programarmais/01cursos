@@ -4,7 +4,7 @@ export const conteudo = [
     id: "btcgestaotreino",
     title: "Gestão de Treino",
     description: "Curso de programação de plataforma de gestão de treino.",
-    img: "https://i.imgur.com/nKE0QTr.jpeg",
+    img: "../src/assets/gestaoTreino.webp",
     video: [
       {
         id: "1_1",
@@ -91,7 +91,7 @@ export const conteudo = [
     id: "btcselfcheckout",
     title: "Self Checkout",
     description: "Curso de programação de plataforma de compra de comida.",
-    img: "https://cdn.areademembros.com/cache/t1jb8pbf9rnxq2vKB97oXSirE9ByznRGvz0e18qn-550x550-resized.jpg",
+    img: "../src/assets/selfCheckout.webp",
     video: [
       {
         id: "1_1",
@@ -254,7 +254,7 @@ export const conteudo = [
     id: "docker",
     title: "Docker",
     description: "Curso de Docker.",
-    img: "./assets/cursoDockerAlura.png",
+    img: "../src/assets/cursoDockerAlura.png",
     video: [
       {
         id: "1_1",
