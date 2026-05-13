@@ -4,7 +4,7 @@ export const conteudo = [
     id: "btcgestaotreino",
     title: "Gestão de Treino",
     description: "Curso de programação de plataforma de gestão de treino.",
-    img: "../src/assets/gestaoTreino.webp",
+    img: "../src/assets/gestaoTreino.jpg",
     video: [
       {
         id: "1_1",
@@ -91,7 +91,7 @@ export const conteudo = [
     id: "btcselfcheckout",
     title: "Self Checkout",
     description: "Curso de programação de plataforma de compra de comida.",
-    img: "../src/assets/selfCheckout.webp",
+    img: "../src/assets/selfCheckout.jpg",
     video: [
       {
         id: "1_1",

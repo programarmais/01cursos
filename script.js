@@ -9,7 +9,11 @@ async function scrollSlider() {
       "beforeend",
       `<a href="./pages/curso.html?id=${curso.id}"><img class="img-${curso.id} slider-img shrink-0 w-64 md:w-72 object-cover object-top rounded-xl shadow-lg" src="${curso.img}"></a>`,
     );
+
+    
   });
+
+  
 }
 
 scrollSlider();
