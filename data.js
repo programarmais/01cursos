@@ -48,12 +48,6 @@ export const conteudo = [
                 Link do GitHub
               </a>
             </li>
-            <li>
-                 target="_blank" class="text-indigo-400 hover:text-indigo-300 transition-colors flex items-center gap-2">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                JSON de exemplo para POST /workout-plans
-              </a>
-            </li>
           </ul>
         `,
         url: "https://round-cleopatra-danz-34fff8a1.koyeb.app/stream/36?hash=fbdd0f",
