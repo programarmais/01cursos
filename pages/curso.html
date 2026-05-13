@@ -6,8 +6,61 @@
     <title>DevCursos</title>
     <link href="../src/output.css" rel="stylesheet" />
   </head>
-  <body class="min-h-screen bg-[radial-gradient(circle_at_center,_var(--color-hbo-purple)_0%,_var(--color-hbo-dark)_100%)]">
-    <div id="aulas" class="flex gap-4 mt-8"></div>
+  <body
+    class="min-h-screen bg-[radial-gradient(circle_at_center,_var(--color-hbo-purple)_0%,_var(--color-hbo-dark)_100%)]"
+  >
+    <nav
+      class="w-full z-50 px-6 py-4 flex justify-between items-center bg-black/60 backdrop-blur-md border-b border-gray-800/50"
+    >
+      <img src="src/assets/logo.png" alt="Logo 01Cursos" class="h-10 md:h-12" />
+
+      <div class="hidden md:flex gap-8 items-center">
+        <a
+          href="../index.html"
+          class="text-white font-semibold hover:text-indigo-400 transition-colors"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="text-gray-300 font-semibold hover:text-indigo-400 transition-colors"
+          >Cursos</a
+        >
+        <a
+          href="#"
+          class="text-gray-300 font-semibold hover:text-indigo-400 transition-colors"
+          >Minha Lista</a
+        >
+      </div>
+
+      <div class="md:hidden flex items-center">
+        <button
+          id="menuMobileBtn"
+          class="text-white focus:outline-none hover:text-indigo-400"
+        >
+          <svg
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <div class="infos"></div>
+    <div>
+      <h2 class="text-3xl text-white font-semibold w-full pl-3 md:pl-10 ">Aulas</h2>
+      <div id="aulas" class="grid grid-cols-2 md:grid-cols-6 gap-4 mt-3 pl-3 pb-3 md:pl-10"></div>
+    </div>
+    
+      
+    </div>
     <script type="module" src="../scripts/cursos.js"></script>
   </body>
 </html>

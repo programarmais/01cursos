@@ -36,7 +36,6 @@ const imgProximo = document.getElementById("imgProximo");
 
 if (indexAtual > 0) {
   const videoAnterior = cursoSelecionado.video[indexAtual - 1];
-
   linkAnterior.href = `player.html?id=${idCapturado}&video=${videoAnterior.id}`;
   tituloAnterior.textContent = videoAnterior.title;
   imgAnterior.src = videoAnterior.img || cursoSelecionado.img;
